@@ -12,6 +12,13 @@
           <code class="text-white hover:text-emerald-500">EventsDB.Jobs</code>
         </a>
       </li>
+      <li>
+        <a class="no-underline" href="/mongodb/EventsDB/PersonEvents">
+          <code class="text-white hover:text-emerald-500"
+            >EventsDB.PersonEvents</code
+          >
+        </a>
+      </li>
     </ul>
   </div>
 </div>
