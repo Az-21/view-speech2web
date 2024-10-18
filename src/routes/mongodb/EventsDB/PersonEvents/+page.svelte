@@ -1,4 +1,5 @@
 <script lang="ts">
+  import DatabaseCard from "$lib/component/DatabaseCard.svelte";
   import Header from "$lib/component/Header.svelte";
   import { style } from "$lib/style.ts";
   import type { PageData } from "./$types";
@@ -7,8 +8,13 @@
 
 <Header></Header>
 <div class="w-11/12 mx-auto">
-  <div class="prose prose-invert py-8">
-    <code class="text-lg">EventsDB.Jobs</code>
+  <div class="py-8">
+    <DatabaseCard
+      pythonIdentifier="sample_schema_01"
+      mongodbIdentifier="EventsDB.PersonEvents"
+      href="/mongodb/EventsDB/PersonEvents"
+      showButton={false}
+    />
   </div>
 
   <table class={style.table.self}>

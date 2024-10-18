@@ -6,7 +6,7 @@
 <Header />
 
 <div class="mx-auto w-11/12">
-  <div class="pt-12 grid grid-cols-2 gap-12">
+  <div class="pt-8 grid grid-cols-2 gap-12">
     <DatabaseCard
       pythonIdentifier="sample_schema_01"
       mongodbIdentifier="EventsDB.PersonEvents"

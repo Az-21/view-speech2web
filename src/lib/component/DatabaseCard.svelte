@@ -2,6 +2,7 @@
   export let pythonIdentifier = "Not Defined";
   export let mongodbIdentifier = "Not Defined";
   export let href;
+  export let showButton = true;
 </script>
 
 <div class="w-full bg-stone-900 rounded-md p-4 text-lg">
@@ -15,13 +16,15 @@
     <code>{mongodbIdentifier}</code>
   </div>
 
-  <div class="pl-4 py-2 pt-12">
-    <a {href}>
-      <button
-        type="button"
-        class=" bg-green-700 hover:bg-green-800 rounded-md px-8 py-2"
-        >View</button
-      >
-    </a>
-  </div>
+  {#if showButton}
+    <div class="pl-4 py-2 pt-12">
+      <a {href}>
+        <button
+          type="button"
+          class=" bg-green-700 hover:bg-green-800 rounded-md px-8 py-2"
+          >View</button
+        >
+      </a>
+    </div>
+  {/if}
 </div>
