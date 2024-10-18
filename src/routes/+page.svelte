@@ -1,24 +1,21 @@
 <script>
   import Header from "$lib/component/Header.svelte";
+  import DatabaseCard from "$lib/component/DatabaseCard.svelte";
 </script>
 
 <Header />
 
 <div class="mx-auto w-11/12">
-  <div class="prose prose-invert pt-12">
-    <ul>
-      <li>
-        <a class="no-underline" href="/mongodb/EventsDB/Jobs">
-          <code class="text-white hover:text-emerald-500">EventsDB.Jobs</code>
-        </a>
-      </li>
-      <li>
-        <a class="no-underline" href="/mongodb/EventsDB/PersonEvents">
-          <code class="text-white hover:text-emerald-500"
-            >EventsDB.PersonEvents</code
-          >
-        </a>
-      </li>
-    </ul>
+  <div class="pt-12 grid grid-cols-2 gap-12">
+    <DatabaseCard
+      pythonIdentifier="sample_schema_01"
+      mongodbIdentifier="EventsDB.PersonEvents"
+      href="/mongodb/EventsDB/PersonEvents"
+    />
+    <DatabaseCard
+      pythonIdentifier="task_schema_01"
+      mongodbIdentifier="EventsDB.Jobs"
+      href="/mongodb/EventsDB/Jobs"
+    />
   </div>
 </div>
