@@ -20,7 +20,7 @@
   <table class={style.table.self}>
     <thead>
       <tr>
-        <th class={style.table.header}>ID</th>
+        <!-- <th class={style.table.header}>ID</th> -->
         <th class={style.table.header}>Name</th>
         <th class={style.table.header}>Client</th>
         <th class={style.table.header}>Description</th>
@@ -32,13 +32,13 @@
     <tbody class={style.table.body}>
       {#each data.jobs as job}
         <tr>
-          <td class={style.table.row}>{job._id}</td>
-          <td class={style.table.row}>{job.Person.Name}</td>
-          <td class={style.table.row}>{job.Task.Client}</td>
-          <td class={style.table.row}>{job.Task.Description}</td>
-          <td class={style.table.row}>{job.Task.Date}</td>
-          <td class={style.table.row}>{job.Task.Duration}</td>
-          <td class={style.table.row}>{job.Person.UserID}</td>
+          <!-- <td class={style.table.row}><code>{job._id}</code></td> -->
+          <td class={style.table.row}><code>{job.Person.Name}</code></td>
+          <td class={style.table.row}><code>{job.Task.Client}</code></td>
+          <td class={style.table.row}><code>{job.Task.Description}</code></td>
+          <td class={style.table.row}><code>{job.Task.Date}</code></td>
+          <td class={style.table.row}><code>{job.Task.Duration}</code></td>
+          <td class={style.table.row}><code>{job.Person.UserID}</code></td>
         </tr>
       {/each}
     </tbody>

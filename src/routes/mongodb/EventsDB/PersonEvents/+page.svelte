@@ -20,7 +20,7 @@
   <table class={style.table.self}>
     <thead>
       <tr>
-        <th class={style.table.header}>ID</th>
+        <!-- <th class={style.table.header}>ID</th> -->
         <th class={style.table.header}>Name</th>
         <th class={style.table.header}>City</th>
         <th class={style.table.header}>Date</th>
@@ -30,11 +30,11 @@
     <tbody class={style.table.body}>
       {#each data.personEvents as personEvent}
         <tr>
-          <td class={style.table.row}>{personEvent._id}</td>
-          <td class={style.table.row}>{personEvent.Person.Name}</td>
-          <td class={style.table.row}>{personEvent.Location.City}</td>
-          <td class={style.table.row}>{personEvent.Event.Date}</td>
-          <td class={style.table.row}>{personEvent.Person.UserID}</td>
+          <!-- <td class={style.table.row}><code>{personEvent._id}</code></td> -->
+          <td class={style.table.row}><code>{personEvent.Person.Name}</code></td>
+          <td class={style.table.row}><code>{personEvent.Location.City}</code></td>
+          <td class={style.table.row}><code>{personEvent.Event.Date}</code></td>
+          <td class={style.table.row}><code>{personEvent.Person.UserID}</code></td>
         </tr>
       {/each}
     </tbody>
