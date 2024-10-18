@@ -10,7 +10,7 @@ interface User {
 }
 
 export const load: PageServerLoad = async () => {
-  const uri = env.MONGO_URI as string;
+  const uri = env.MONGO_TEST_URI as string;
   const client = new MongoClient(uri);
 
   try {

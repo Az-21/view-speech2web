@@ -1,44 +1,17 @@
-<script lang="ts">
-  import type { PageData } from "./$types";
-
-  export let data: PageData;
+<script>
+  import Header from "$lib/component/Header.svelte";
 </script>
 
-<h1>Mflix Users</h1>
+<Header />
 
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Email</th>
-    </tr>
-  </thead>
-  <tbody>
-    {#each data.users as user}
-      <tr>
-        <td>{user._id}</td>
-        <td>{user.name}</td>
-        <td>{user.email}</td>
-      </tr>
-    {/each}
-  </tbody>
-</table>
-
-<style>
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  th,
-  td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #f2f2f2;
-  }
-</style>
+<div class="mx-auto w-11/12">
+  <div class="prose prose-invert pt-12">
+    <ul>
+      <li>
+        <a class="no-underline" href="/mongodb/EventsDB/Jobs">
+          <code class="text-white hover:text-emerald-500">EventsDB.Jobs</code>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
