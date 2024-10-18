@@ -14,7 +14,7 @@ interface Task {
   Client: string;
 }
 
-interface Jobs {
+interface Job {
   _id: ObjectId;
   Person: Person;
   Task: Task;
@@ -27,7 +27,7 @@ export const load: PageServerLoad = async () => {
   try {
     await client.connect();
     const database = client.db("EventsDB");
-    const usersCollection = database.collection<Jobs>("Jobs");
+    const usersCollection = database.collection<Job>("Jobs");
 
     const jobs = await usersCollection.find({}).toArray();
 
