@@ -10,10 +10,7 @@
     <!-- Right: Links -->
     <div class="flex space-x-4">
       <a href="/" class="{link_color} {hover_link_color}">Home</a>
-      <a
-        href="https://github.com/atishnaik8805/speech2web-agents"
-        class="{link_color} {hover_link_color}">GitHub</a
-      >
+      <!-- <a href="https://github.com/atishnaik8805/speech2web-agents" class="{link_color} {hover_link_color}">GitHub</a> -->
     </div>
   </div>
 </nav>
